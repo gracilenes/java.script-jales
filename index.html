@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <title>Atividade Js</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Botão Atacar</title>
+    </head>
+    <body>
+        <button id="btnAtacar">Atacar</button>
+    
+        <script>
+            // Selecionando o botão pelo ID
+            let btnAtacar = document.getElementById('btnAtacar');
+    
+            // Adicionando um evento de clique ao botão
+            btnAtacar.addEventListener('click', function() {
+                console.log("Ataque realizado!");
+            });
+        </script>
+    </body>
+    </html>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nome do Herói</title>
+    </head>
+    <body>
+        <h1>Jogo do Herói</h1>
+        <!-- Campo de texto para o nome do herói -->
+        <input type="text" id="nomeHeroi" placeholder="Digite o nome do herói">
+        
+        <!-- Botão de ataque -->
+        <button id="btnAtacar">Atacar</button>
+    
+        <script>
+            // Selecionando os elementos do HTML
+            let btnAtacar = document.getElementById('btnAtacar');
+            let nomeHeroiInput = document.getElementById('nomeHeroi');
+    
+            // Adicionando evento de clique ao botão
+            btnAtacar.addEventListener('click', function() {
+                // Pegando o nome do herói digitado no campo de texto
+                let nomeHeroi = nomeHeroiInput.value;
+    
+                // Verificando se o nome foi preenchido
+                if (nomeHeroi.trim() !== "") {
+                    console.log(`Bem-vindo, ${nomeHeroi}!`);
+                } else {
+                    console.log("Por favor, digite o nome do herói.");
+                }
+            });
+        </script>
+    </body>
+    </html>
+            
+</body>
+</html>
 
